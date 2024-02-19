@@ -1,33 +1,66 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+main{
+  background-color: rgb(255,225,221);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap:11px;
+  max-width: 600px;
+  width: 100%;
+  height: 70%;
+  margin: auto;
+  padding: 1rem 4rem;
+}
+
 h1{
-  color: rgb(35, 58, 31);
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+input{
+  padding: 1rem;
+  outline: none;
+  border: 1px solid beige;
+  border-radius: 5px;
+  height: 40px;
+
 }
 
-table{
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 10px;
-}
 button{
-   border-radius:5px ;
-   min-height: 30px;
-   
-}
-input{
-  border-radius:5px ;
-  min-height: 20px;
-  
+  background-color: rgb(106,0,255);
+  border-radius: 5px;
+  width: 12rem;
+  color: white;
+  align-self: center;
+  font:400 1rem sans-serif;
+  border:none;
+  cursor: pointer;
+  padding: 1rem 2rem;;
 }
 
-input{
-  border-radius:3px ;
-  margin: 10px;
-}
 .uurl{
   background-color:rgba(0, 0, 0, 0.248);
   padding: 4px;
   border-radius: 4px;
+}
+
+.error{
+  color: red;
+  font-size: 1rem;
+  text-align: right;
+  margin: 10px;
 }
